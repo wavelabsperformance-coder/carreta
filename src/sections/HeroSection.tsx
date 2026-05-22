@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Play } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { siteData } from '@/data/site-data'
 
 export function HeroSection() {
@@ -32,7 +32,7 @@ export function HeroSection() {
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 py-32 lg:py-40">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-[1fr_1.15fr] gap-16 lg:gap-24 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -55,17 +55,22 @@ export function HeroSection() {
 
             {/* Heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-[var(--color-foreground)] leading-[1.1] mb-6">
-              <span className="block">Saúde, cultura</span>
-              <span className="block">e conhecimento</span>
+              <span className="block">Cultura, cinema</span>
+
+              <span className="block">e transformação</span>
+
               <span className="block text-[var(--color-gold)]">
                 em movimento.
               </span>
             </h1>
 
             {/* Description */}
-            <p className="text-lg lg:text-xl text-[var(--color-muted)] leading-relaxed max-w-lg mb-10">
-              {siteData.description} Levamos experiências transformadoras para
-              comunidades em todo o Brasil.
+            <p className="text-lg lg:text-xl text-[var(--color-muted)] leading-relaxed max-w-xl mb-10">
+              Projeto itinerante de cinema que leva cultura,
+              entretenimento e experiências audiovisuais para
+              comunidades em todo o Brasil. Uma estrutura móvel criada
+              para aproximar pessoas, gerar conexão e democratizar o
+              acesso ao cinema de forma acessível, imersiva e memorável.
             </p>
 
             {/* CTAs */}
@@ -99,40 +104,27 @@ export function HeroSection() {
 
           {/* Visual */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.9, delay: 0.5 }}
             className="relative"
           >
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-[var(--color-warm-dark)]">
+            <div className="relative rounded-[32px] overflow-hidden bg-[var(--color-warm-dark)] shadow-2xl max-w-[540px] ml-auto">
               {/* Hero Image */}
               <img
                 src="/images/hero-bg.jpg"
                 alt="Cinema itinerante Saint Germain em comunidade brasileira"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="w-full h-auto object-cover"
               />
 
-              {/* Play button overlay */}
-              <div className="absolute inset-0 flex items-center justify-center bg-[var(--color-foreground)]/20">
-                <div className="text-center">
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    className="w-20 h-20 mx-auto rounded-full bg-[var(--color-background)]/90 flex items-center justify-center cursor-pointer group shadow-2xl"
-                  >
-                    <Play
-                      size={32}
-                      className="text-[var(--color-foreground)] ml-1 group-hover:text-[var(--color-gold)] transition-colors"
-                    />
-                  </motion.div>
+              {/* Soft Overlay */}
+              <div className="absolute inset-0 bg-black/10" />
 
-                  <p className="mt-4 text-sm text-[var(--color-background)] font-medium">
-                    Assista ao vídeo institucional
-                  </p>
-                </div>
-              </div>
+              {/* Premium Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-black/10" />
 
-              {/* Decorative overlay */}
-              <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-[var(--color-foreground)]/60 to-transparent" />
+              {/* Bottom Gradient */}
+              <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent" />
             </div>
           </motion.div>
         </div>

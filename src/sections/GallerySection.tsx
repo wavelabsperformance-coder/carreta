@@ -4,11 +4,11 @@ import { useInView } from 'framer-motion'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const galleryImages = [
-  { id: 1, src: '/images/gallery-1.jpeg', alt: 'Cine Road 75 em ação' },
+ 
   { id: 2, src: '/images/gallery-2.jpeg', alt: 'Atendimento de saúde itinerante' },
   { id: 3, src: '/images/gallery-3.jpeg', alt: 'Público no cinema itinerante' },
   { id: 4, src: '/images/gallery-4.jpeg', alt: 'Equipe médica em campanha' },
-  { id: 5, src: '/images/gallery-5.jpeg', alt: 'Evento cultural comunitário' },
+
   { id: 6, src: '/images/gallery-6.jpeg', alt: 'Unidade móvel de saúde' },
   { id: 7, src: '/images/gallery-7.jpeg', alt: 'Atividade educativa' },
   { id: 8, src: '/images/gallery-8.jpeg', alt: 'Participação comunitária' },
