@@ -7,10 +7,10 @@ export const siteData = {
   company: {
     name: 'Saint Germain Itinerante',
     cnpj: '32.728.768/0001-72',
-    address: 'R FENELON SANTOS, 235',
-    email: 'ARMANDOFENIX8888@GMAIL.COM',
-    whatsapp: '(79) 8787-2323',
-    whatsappLink: 'https://wa.me/557996823728332',
+    address: 'R. Dep. Euclídes Paes Mendonça, n°560 - Salgado Filho, Aracaju - SE, 49020-460',
+    email: 'Institutosaintgermain2026@gmail.com',
+    whatsapp: '(79) 99982-4771',
+    whatsappLink: 'https://wa.me/5579999824771',
   },
 
   ecosystem: [
